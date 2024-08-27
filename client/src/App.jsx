@@ -1,8 +1,10 @@
+import Navbar from './assets/components/navbar/Navbar';
 import './assets/layout.scss';
+
 function App() {
   return (
     <div className='layout'>
-      <a href='/'>Hello World</a>
+      <Navbar />
     </div>
   );
 }
