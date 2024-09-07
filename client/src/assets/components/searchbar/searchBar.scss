@@ -1,2 +1,50 @@
 .searchBar {
+  .type {
+    button {
+      padding: 16px 36px;
+      border: 1px solid #999;
+      cursor: pointer;
+      background-color: white;
+      border-bottom: none;
+
+      &.active {
+        background-color: black;
+        color: white;
+      }
+
+      &:first-child {
+        border-top-left-radius: 5px;
+        border-right: none;
+      }
+      &:last-child {
+        border-top-right-radius: 5px;
+        border-left: none;
+      }
+    }
+  }
+  form {
+    display: flex;
+    border: 1px solid #999;
+    justify-content: space-between;
+    height: 64px;
+    gap: 5;
+
+    input {
+      border: none;
+      padding: 0 10px;
+      width: 200px;
+    }
+    button {
+      border: none;
+      background-color: #fece51;
+      flex: 1;
+      cursor: pointer;
+      border-left: 1px solid #999;
+
+      img {
+        height: 24px;
+        width: 24px;
+      }
+    }
+  }
 }
